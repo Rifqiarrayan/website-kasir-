@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  background-color: #ff5722;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffe0b2;
+}
+
+
+.navbar .dropdown-menu {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.category-card {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  background-color: #ffe0b2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-card h6 {
+  font-weight: bold;
+  color: #ff5722;
+  margin-top: 5px;
+}
+
+.category-aktif {
+  border: 2px solid #ff784e;
+  background-color: #ff784e;
+  color: white;
+}
+
+
+.list-group-item {
+  padding: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #ffe0b2;
+  color: #ff5722;
+}
+
+.modal-title {
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.modal-body p strong {
+  color: #ff5722;
+  font-size: 1.25rem;
+}
+
+
+
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff5722, #ff784e);
+  border: none;
+}
+
+
+@media only screen and (max-height: 1000px) {
+  .hasil {
+    height: 650px;
+  }
+  
+  .menu {
+    height: 800px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar{
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  object-fit: cover;
+  height: 150px; /* Sesuaikan untuk proporsi gambar */
+  border-bottom: 2px solid #ff5722;
+}
